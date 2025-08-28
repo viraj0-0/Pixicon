@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 // import { Routes, Route } from "react-router-dom";
 import { Route, Routes, Navigate} from 'react-router-dom';
 import Browse from "./pages/Browse";
-import Home from "./Pages/Home";
+import Home from "./pages/Home";
 import Docs from "./pages/Docs";
 import Create from "./pages/Create";
 import Featured from "./pages/Featured";
