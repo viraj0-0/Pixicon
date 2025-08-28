@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api =axios.create({
-    baseURL : 'http://localhost:8080/auth'
+    baseURL : 'https://pixicon-backend.onrender.com/auth'
 })
 
 export const googleAuth =(code)=> api.get(`/google?code=${code}`)     
