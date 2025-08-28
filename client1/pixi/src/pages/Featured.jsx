@@ -18,7 +18,7 @@ export default function Featured() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/icons/${userData.userId}`
+        `https://pixicon-backend.onrender.com/api/icons/${userData.userId}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch icons.");
