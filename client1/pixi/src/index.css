@@ -1,0 +1,6 @@
+/* client1/pixi/src/index.css */
+@import "tailwindcss";
+body {
+  background-color: #111;
+  font-family: 'Nunito';
+}
