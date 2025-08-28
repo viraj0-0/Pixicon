@@ -153,7 +153,7 @@ export default function AIGuide() {
     setUserMessage('');
 
     try {
-      const response = await fetch('http://localhost:8080/api/ai/design-ideas', {
+      const response = await fetch('https://pixicon-backend.onrender.com/api/ai/design-ideas', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage }),
