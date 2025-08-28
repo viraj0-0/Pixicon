@@ -209,7 +209,7 @@ export default function IconCard({ iconName, savedIcons, onIconRemoved }) {
       if (saved) {
         // Unsave
         const response = await fetch(
-          `http://localhost:8080/api/icons/${userData.userId}/${iconName}`,
+          `https://pixicon-backend.onrender.com/api/icons/${userData.userId}/${iconName}`,
           { method: "DELETE" }
         );
         if (response.ok) {
@@ -230,7 +230,7 @@ export default function IconCard({ iconName, savedIcons, onIconRemoved }) {
         }
       } else {
         // Save
-        const response = await fetch("http://localhost:8080/api/icons", {
+        const response = await fetch("https://pixicon-backend.onrender.com/api/icons", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
