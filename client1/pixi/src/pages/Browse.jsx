@@ -22,7 +22,7 @@ export default function Browse() {
       }
       try {
         const response = await fetch(
-          `http://localhost:8080/api/icons/${userData.userId}`
+          `https://pixicon-backend.onrender.com/api/icons/${userData.userId}`
         );
         const data = await response.json();
         const iconNames = data.map((icon) => icon.iconName);
